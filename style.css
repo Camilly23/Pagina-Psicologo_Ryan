@@ -1,0 +1,132 @@
+:where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-bg {
+            background-color: #f8fafc;
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .animate-slide-in {
+            animation: slideIn 1s ease-out;
+        }
+
+        .animate-scale-up {
+            animation: scaleUp 0.5s ease-out;
+        }
+
+        .animate-pulse {
+            animation: pulse 2s infinite;
+        }
+
+        .animate-rotate {
+            animation: rotate 15s linear infinite;
+        }
+
+        .animate-bounce-subtle {
+            animation: bounceSlight 2s infinite;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes scaleUp {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes bounceSlight {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(91, 134, 229, 0.2);
+        }
+
+        .book-card {
+            perspective: 1000px;
+        }
+
+        .book-inner {
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .book-card:hover .book-inner {
+            transform: rotateY(15deg);
+        }
+        .logo1{
+            width: 60px;
+            height: 60px;
+        }
+        .logo2{
+            width: 150px;
+            height: 100px;
+        }

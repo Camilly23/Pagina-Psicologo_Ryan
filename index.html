@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terapia online - Ryan Dutra</title>
+    <link rel="icon" type="image/png" href="Logo_S.PsicoHighQ_SF.png" />
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { primary: '#5B86E5', secondary: '#9D8DE3' }, borderRadius: { 'none': '0px', 'sm': '4px', DEFAULT: '8px', 'md': '12px', 'lg': '16px', 'xl': '20px', '2xl': '24px', '3xl': '32px', 'full': '9999px', 'button': '8px' } } } }</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+           :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-bg {
+            background-color: #f8fafc;
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .animate-slide-in {
+            animation: slideIn 1s ease-out;
+        }
+
+        .animate-scale-up {
+            animation: scaleUp 0.5s ease-out;
+        }
+
+        .animate-pulse {
+            animation: pulse 2s infinite;
+        }
+
+        .animate-rotate {
+            animation: rotate 15s linear infinite;
+        }
+
+        .animate-bounce-subtle {
+            animation: bounceSlight 2s infinite;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes scaleUp {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes bounceSlight {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(91, 134, 229, 0.2);
+        }
+
+        .book-card {
+            perspective: 1000px;
+        }
+
+        .book-inner {
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .book-card:hover .book-inner {
+            transform: rotateY(15deg);
+        }
+        .logo1{
+            width: 60px;
+            height: 60px;
+        }
+        .logo2{
+            width: 150px;
+            height: 100px;
+        }
+   
+    </style>
+    
+</head>
+
+<body class="bg-white">
+    <!-- Navegação -->
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 animate-fade-in">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-['Pacifico'] text-primary">Psicologia com Ryan</a>
+            <img src="Logo_S.PsicoHighQ_SF.png" class="logo1">
+            <nav class="hidden md:flex space-x-8">
+                <a href="#sobre" class="text-gray-700 hover:text-primary transition-colors">Sobre Mim</a>
+                <a href="#abordagem" class="text-gray-700 hover:text-primary transition-colors">Abordagem</a>
+                <a href="#trabalhos" class="text-gray-700 hover:text-primary transition-colors">Publicações</a>
+                <a href="#servicos" class="text-gray-700 hover:text-primary transition-colors">Serviços</a>
+                <a href="#especialidades" class="text-gray-700 hover:text-primary transition-colors">Especialidades</a>
+            </nav>
+        </div>
+    </header>
+    <section class="hero-bg min-h-screen flex items-center pt-20"
+    style="background-image: url('https://static.readdy.ai/image/7b9733177dfb8250cc40fb4a6c57a403/c019ddb2ab50be85b6f0bb1b955a291a.png'); background-size: cover; background-position: center;">
+    
+    <div class="container mx-auto px-4 sm:px-6 py-20">
+        <div class="flex flex-col-reverse md:flex-row items-center gap-12">
+            
+            <!-- Texto -->
+            <div class="md:w-1/2 animate-slide-in text-center md:text-left">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                    Psicologia Inclusiva e Acolhedora
+                </h1>
+                <h2 class="text-lg sm:text-xl md:text-2xl text-gray-600 mb-6">
+                    Especialista em saúde mental para a comunidade LGBTQIA+
+                </h2>
+                <p class="text-gray-700 mb-8 max-w-xl mx-auto md:mx-0">
+                    Oferecendo um espaço seguro e acolhedor para você ser quem realmente é. Terapia especializada com foco em questões de identidade, relacionamentos e bem-estar emocional.
+                </p>
+
+                <!-- Botões -->
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                    <a href="https://wa.me/qr/6EPFGZWIRKVCE1" target="_blank"
+                        class="bg-primary text-white px-6 py-3 !rounded-button shadow-lg hover:shadow-xl hover:bg-primary/90 transition-all animate-pulse whitespace-nowrap text-center">
+                        Agendar Consulta
+                    </a>
+                    <a href="#sobre"
+                        class="border border-primary text-primary px-6 py-3 !rounded-button hover:bg-primary/5 transition-all whitespace-nowrap text-center">
+                        Saiba Mais
+                    </a>
+                </div>
+            </div>
+
+            <!-- Imagem -->
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://static.readdy.ai/image/7b9733177dfb8250cc40fb4a6c57a403/fd9f8a1b30d97eeab0d96c8907b6ec83.png"
+                    alt="Flor símbolo de crescimento"
+                    class="w-48 sm:w-64 h-auto object-contain animate-rotate">
+            </div>
+
+        </div>
+    </div>
+</section>
+    <!-- Sobre Mim -->
+    <section id="sobre" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-16">Sobre Mim</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/3 flex justify-center">
+                    <div class="relative w-64 h-64 rounded-full overflow-hidden shadow-xl animate-scale-up">
+                        <img src="foto_psicologo.jpg"
+                            alt="Espaço de trabalho" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-semibold text-primary mb-4">Psicólogo: Ryan Dutra Rodrigues</h3>
+                    <p class="text-gray-700 mb-6">Formado em Psicologia pela (FMU) em 2024, pós-graduando em Neurociências e Aprendizagem e Antropologia Cultural e Social pela (Faculdade Focus) em 2025. Atua na clínica sob a abordagem sócio-histórico-cultural (SHC) e a terapia afirmativa para a população LGBTQIA+, em formato online e atende adolescentes, adultos e idosos. <br>
+                    <br>
+                    Tive a oportunidade de atender pacientes individualmente na clínica e trabalhar com grupos de adolescentes em projetos de psicologia educacional e social. Na graduação desenvolvi pesquisas, publicações e apresentações em congressos. </p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="flex flex-col items-center p-4 bg-blue-50 rounded-lg">
+                            <div class="w-12 h-12 flex items-center justify-center text-primary mb-2">
+                                <i class="ri-heart-line ri-2x"></i>
+                            </div>
+                            <span class="text-center text-gray-700">Empatia</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 bg-blue-50 rounded-lg">
+                            <div class="w-12 h-12 flex items-center justify-center text-primary mb-2">
+                                <i class="ri-shield-check-line ri-2x"></i>
+                            </div>
+                            <span class="text-center text-gray-700">Confidencialidade</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 bg-blue-50 rounded-lg">
+                            <div class="w-12 h-12 flex items-center justify-center text-primary mb-2">
+                                <i class="ri-rainbow-line ri-2x"></i>
+                            </div>
+                            <span class="text-center text-gray-700">Inclusão</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 bg-blue-50 rounded-lg">
+                            <div class="w-12 h-12 flex items-center justify-center text-primary mb-2">
+                                <i class="ri-psychology-line ri-2x"></i>
+                            </div>
+                            <span class="text-center text-gray-700">Expertise</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Credenciais -->
+    <section class="py-20 bg-gradient-to-r from-blue-50 to-purple-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-16">Credenciais Profissionais</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all animate-scale-up">
+                    <div
+                        class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-4">
+                        <i class="ri-graduation-cap-line ri-lg"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Pós-Graduando</h3>
+                    <p class="text-gray-600 mb-2">Neurociências e Aprendizagem e Antropologia Cultural e Social</p>
+                    <p class="text-gray-500">(Faculdade Focus), 2025</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all animate-scale-up"
+                    style="animation-delay: 0.2s">
+                    <div
+                        class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-4">
+                        <i class="ri-book-open-line ri-lg"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Graduação</h3>
+                    <p class="text-gray-600 mb-2">Formado em Psicologia</p>
+                    <p class="text-gray-500">Centro Universitário das Faculdades Metropolitanas Unidas (FMU), 2024</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all animate-scale-up"
+                    style="animation-delay: 0.4s">
+                    <div
+                        class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-4">
+                        <i class="ri-award-line ri-lg"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Formação</h3>
+                    <p class="text-gray-600 mb-2">Terapia Afirmativa LGBTQIA+</p>
+                    <p class="text-gray-500"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Minha Abordagem -->
+    <section id="abordagem" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-16">Minha Abordagem</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-primary mb-6">Psicologia Sócio-Histórica e Afirmativa</h3>
+                    <p class="text-gray-700 mb-6">A psicologia sócio-histórica entende o paciente como alguém que é
+                        influenciado pela cultura e pela sociedade, mas que também a influencia, tendo um papel
+                        passivo/ativo em sua saúde ou adoecimento.</p>
+                    <p class="text-gray-700 mb-8">As intervenções sempre ocorrem a partir do que o paciente vai trazer
+                        na terapia, porém não se reduz a isso, pois o contexto em que você vive, aprende e se desenvolve
+                        também é considerado. Trabalho com uma perspectiva afirmativa para questões LGBTQIA+,
+                        reconhecendo e celebrando a diversidade de orientações sexuais e identidades de gênero como
+                        variações naturais da experiência humana.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 flex items-center justify-center text-primary mr-4 mt-1">
+                                <i class="ri-check-line ri-lg"></i>
+                            </div>
+                            <p class="text-gray-700">Ambiente seguro e livre de preconceitos</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 flex items-center justify-center text-primary mr-4 mt-1">
+                                <i class="ri-check-line ri-lg"></i>
+                            </div>
+                            <p class="text-gray-700">Respeito à autodeterminação e autonomia</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 flex items-center justify-center text-primary mr-4 mt-1">
+                                <i class="ri-check-line ri-lg"></i>
+                            </div>
+                            <p class="text-gray-700">Reconhecimento do impacto do estigma e da discriminação</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 flex items-center justify-center text-primary mr-4 mt-1">
+                                <i class="ri-check-line ri-lg"></i>
+                            </div>
+                            <p class="text-gray-700">Foco nas potencialidades e não apenas nos desafios</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="lgbt-12.png"
+                        alt="Espaço terapêutico" class="rounded-lg shadow-lg w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Trabalhos Escritos -->
+    <section id="trabalhos" class="py-20 bg-gradient-to-r from-blue-50 to-purple-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-16">Publicações</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="book-card w-64">
+                        <div class="book-inner">
+                            <img src="livro-Ryan-1.png"
+                                alt="Publicação profissional" class="w-full rounded-lg shadow-xl">
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-primary mb-4">Projeto de Vida: Experiência e ensaios entre e sobre a vida</h3>
+                    <p class="text-gray-500 mb-6">Publicado em 2023 • Editora UNICLAP</p>
+                    <p class="text-gray-700 mb-6">Em agosto de 2023 a novembro de 2023, foi desenvolvido um projeto social sobre projeto de vida em uma escola estadual no extremo sul da cidade de São Paulo, na região de Parelheiros. Convidado a orientar e presidir os encontros quinzenais e semanais com a participação da professora docente em filosofia e sociologia da instituição.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex items-center justify-center text-primary mr-3 mt-1">
+                                <i class="ri-book-mark-line"></i>
+                            </div>
+                            <span class="text-gray-600"><b> Integração de Saberes:</b> Fusão de conhecimentos de Psicologia, Filosofia e Sociologia</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-4 h-6 flex items-center justify-center text-primary mr-3 mt-1">
+                                <i class="ri-book-mark-line"></i>
+                            </div>
+                            <span class="text-gray-600"><b>Metodologia Ativa:</b> 4 meses de atividades</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex items-center justify-center text-primary mr-3 mt-1">
+                                <i class="ri-book-mark-line"></i>
+                            </div>
+                            <span class="text-gray-600"><b> Público-Alvo e Resultados:</b> 25 jovens desenvolvendo uma visão crítica sobre o conceito "Projeto de vida" e suas próprias perspectivas de futuro</span>
+                        </li>                       
+                    </ul>
+                    <div class="flex space-x-4">
+                        <a href="https://loja.uiclap.com/titulo/ua46687/" target="_blank"
+                            class="bg-primary text-white px-6 py-2 !rounded-button shadow-md hover:bg-primary/90 transition-all whitespace-nowrap">Comprar
+                            o Livro</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Outras publicações - abaixo do botão -->
+<div class="w-full mx-auto mt-12 bg-white p-10 md:p-14 rounded-2xl shadow-xl">
+    <h4 class="text-3xl font-bold text-gray-800 mb-6 text-center border-b pb-3">
+        📚 Artigos e Capítulos Publicados
+    </h4>
+
+    <p class="text-gray-600 mb-8 text-center text-lg">
+        Os artigos e capítulos abaixo foram escritos por mim durante minha trajetória acadêmica, com orientação de professores da Universidade FMU, e publicados em plataformas reconhecidas no meio científico e em revistas científicas especializadas.
+    </p>
+
+    <ul class="space-y-6 text-base md:text-lg px-4 md:px-10">
+        <li class="flex items-start gap-3">
+            <span class="text-blue-600 mt-1">📄</span>
+            <a href="https://www.researchgate.net/publication/380319102_CONSTRUCAO_IDENTITARIA_DO_HOMEM_GAY_UMA_EXPLORACAO_DENTRO_DA_CIDADE_DE_SAO_PAULO" target="_blank"
+               class="text-blue-700 hover:underline hover:text-blue-900 font-medium">
+                Construção Identitária do Homem Gay – Uma Exploração Dentro da Cidade de São Paulo
+            </a>
+        </li>
+        <li class="flex items-start gap-3">
+            <span class="text-blue-600 mt-1">📄</span>
+            <a href="https://www.researchgate.net/publication/381401111_ENVOLVIMENTO_ESCOLAR_DE_JOVENS_ESTUDANTES_DE_UMA_ESCOLA_PUBLICA_ESTADUAL_RELATO_DE_EXPERIENCIA_EM_INVESTIGACAO_PSICOSSOCIAL" target="_blank"
+               class="text-blue-700 hover:underline hover:text-blue-900 font-medium">
+                Envolvimento Escolar de Jovens – Relato de Experiência em Investigação Psicossocial
+            </a>
+        </li>
+        <li class="flex items-start gap-3">
+            <span class="text-blue-600 mt-1">📘</span>
+            <a href="https://thesiseditora.com.br/books/estudos-sociais-e-saude-coletiva-ensino-pesquisa-e-extensao/" target="_blank"
+               class="text-blue-700 hover:underline hover:text-blue-900 font-medium">
+                Estudos Sociais e Saúde Coletiva – Capítulo 5 (Thesis Editora)
+            </a>
+        </li>
+        <li class="flex items-start gap-3">
+            <span class="text-blue-600 mt-1">📰</span>
+            <a href="https://ojs.thesiseditora.com.br/index.php/jsihs/article/view/219" target="_blank"
+               class="text-blue-700 hover:underline hover:text-blue-900 font-medium">
+                Artigo na Revista JSIHS (Thesis Editora)
+            </a>
+        </li>
+    </ul>
+</div>
+    </section>
+    <!-- Serviços Oferecidos -->
+    <section id="servicos" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-16">Serviços Oferecidos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div
+                    class="service-card bg-white p-6 rounded-lg shadow-md transition-all duration-300 animate-scale-up">
+                    <div
+                        class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-4">
+                        <i class="ri-vidicon-line ri-2x"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Psicoterapia Online</h3>
+                    <p class="text-gray-700 mb-4">Atendimento via Google Meet para adolescentes a partir de 15 anos,
+                        adultos, idosos e população LGBT+.</p>
+                    <div class="flex justify-end items-center">
+                        <a href="https://wa.me/qr/6EPFGZWIRKVCE1"
+                            class="text-primary hover:text-primary/80 transition-colors">Saiba mais →</a>
+                    </div>
+                </div>
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition-all duration-300 animate-scale-up"
+                    style="animation-delay: 0.1s">
+                    <div
+                        class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-4">
+                        <i class="ri-home-heart-line ri-2x"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Acompanhamento Terapêutico</h3>
+                    <p class="text-gray-700 mb-4">Suporte em casa, escolas e saídas sociais, proporcionando apoio em
+                        ambientes do cotidiano.</p>
+                    <div class="flex justify-end items-center">
+                        <a href="https://wa.me/qr/6EPFGZWIRKVCE1"
+                            class="text-primary hover:text-primary/80 transition-colors">Saiba mais →</a>
+                    </div>
+                </div>
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition-all duration-300 animate-scale-up"
+                    style="animation-delay: 0.2s">
+                    <div
+                        class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-4">
+                        <i class="ri-briefcase-line ri-2x"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Orientação Profissional</h3>
+                    <p class="text-gray-700 mb-4">Auxílio na descoberta de vocações e tomada de decisões relacionadas à
+                        carreira e desenvolvimento profissional.</p>
+                    <div class="flex justify-end items-center">
+                        <a href="https://wa.me/qr/6EPFGZWIRKVCE1"
+                            class="text-primary hover:text-primary/80 transition-colors">Saiba mais →</a>
+                    </div>
+                </div>
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition-all duration-300 animate-scale-up"
+                    style="animation-delay: 0.3s">
+                    <div
+                        class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-4">
+                        <i class="ri-mental-health-line ri-2x"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Avaliação Psicológica</h3>
+                    <p class="text-gray-700 mb-4">Processo estruturado para compreender aspectos cognitivos, emocionais
+                        e comportamentais.</p>
+                    <div class="flex justify-end items-center">
+                        <a href="https://wa.me/qr/6EPFGZWIRKVCE1"
+                            class="text-primary hover:text-primary/80 transition-colors">Saiba mais →</a>
+                    </div>
+                </div>
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition-all duration-300 animate-scale-up"
+                    style="animation-delay: 0.4s">
+                    <div
+                        class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-4">
+                        <i class="ri-book-open-line ri-2x"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Orientação Acadêmica</h3>
+                    <p class="text-gray-700 mb-4">Suporte para estudantes enfrentando desafios de aprendizagem,
+                        ansiedade acadêmica e planejamento de estudos.</p>
+                    <div class="flex justify-end items-center">
+                        <a href="https://wa.me/qr/6EPFGZWIRKVCE1"
+                            class="text-primary hover:text-primary/80 transition-colors">Saiba mais →</a>
+                    </div>
+                </div>
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition-all duration-300 animate-scale-up"
+                    style="animation-delay: 0.5s">
+                    <div
+                        class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-4">
+                        <i class="ri-discuss-line ri-2x"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Rodas de Conversa</h3>
+                    <p class="text-gray-700 mb-4">Encontros online ou presenciais em instituições para discussão de
+                        temas relevantes em grupo.</p>
+                    <div class="flex justify-end items-center">
+                        <a href="https://wa.me/qr/6EPFGZWIRKVCE1"
+                            class="text-primary hover:text-primary/80 transition-colors">Saiba mais →</a>
+                    </div>
+                </div>
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition-all duration-300 animate-scale-up"
+                    style="animation-delay: 0.6s">
+                    <div
+                        class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-4">
+                        <i class="ri-presentation-line ri-2x"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Palestras e Workshops</h3>
+                    <p class="text-gray-700 mb-4">Apresentações e atividades práticas sobre temas de saúde mental,
+                        diversidade e desenvolvimento pessoal.</p>
+                    <div class="flex justify-end items-center">
+                        <a href="https://wa.me/qr/6EPFGZWIRKVCE1"
+                            class="text-primary hover:text-primary/80 transition-colors">Saiba mais →</a>
+                    </div>
+                </div>
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition-all duration-300 animate-scale-up"
+                    style="animation-delay: 0.7s">
+                    <div
+                        class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-4">
+                        <i class="ri-building-line ri-2x"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Consultoria Educacional</h3>
+                    <p class="text-gray-700 mb-4">Assessoria para instituições educacionais e sociais em questões de
+                        inclusão e saúde mental.</p>
+                    <div class="flex justify-end items-center">
+                        <a href="https://wa.me/qr/6EPFGZWIRKVCE1"
+                            class="text-primary hover:text-primary/80 transition-colors">Saiba mais →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Áreas de Formação -->
+    <section id="especialidades" class="py-20 bg-gradient-to-r from-blue-50 to-purple-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-16">Áreas de Formação</h2>
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-primary mb-6">Foco em Saúde Mental LGBTQIA+ e TPessoas Diversas</h3>
+                    <p class="text-gray-700 mb-8">Minha prática tem como foco às necessidades da
+                        comunidade LGBTQIA+, com experiência em questões específicas que afetam o bem-estar psicológico
+                        desta população.  Também acompanho pessoas com necessidades diversas, respeitando suas singularidades. </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md animate-scale-up">
+                            <div class="w-12 h-12 flex items-center justify-center text-primary mb-4">
+                                <i class="ri-mental-health-line ri-lg"></i>
+                            </div>
+                            <h4 class="text-lg font-semibold text-gray-800 mb-2">Ansiedade e Depressão</h4>
+                            <p class="text-gray-700">Tratamento especializado considerando fatores de estresse
+                                minoritário</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md animate-scale-up" style="animation-delay: 0.1s">
+                            <div class="w-12 h-12 flex items-center justify-center text-primary mb-4">
+                                <i class="ri-profile-line ri-lg"></i>
+                            </div>
+                            <h4 class="text-lg font-semibold text-gray-800 mb-2">Identidade de Gênero</h4>
+                            <p class="text-gray-700">Apoio durante processos de autodescoberta e transição</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md animate-scale-up" style="animation-delay: 0.2s">
+                            <div class="w-12 h-12 flex items-center justify-center text-primary mb-4">
+                                <i class="ri-heart-2-line ri-lg"></i>
+                            </div>
+                            <h4 class="text-lg font-semibold text-gray-800 mb-2">Relacionamentos</h4>
+                            <p class="text-gray-700">Orientação para construir e manter relações saudáveis</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md animate-scale-up" style="animation-delay: 0.3s">
+                            <div class="w-12 h-12 flex items-center justify-center text-primary mb-4">
+                                <i class="ri-family-line ri-lg"></i>
+                            </div>
+                            <h4 class="text-lg font-semibold text-gray-800 mb-2">Família e Coming Out</h4>
+                            <p class="text-gray-700">Suporte para processos de revelação e dinâmicas familiares</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+
+                    <div class="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg">
+                        <img src="foto-lgbt-hh3.jpg"
+                            alt="Transformação e crescimento" class="w-full h-auto rounded-lg mb-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contato Rápido -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Contato Rápido</h2>
+            <div class="max-w-3xl mx-auto bg-gradient-to-r from-primary/5 to-secondary/5 p-8 rounded-lg shadow-md">
+                <p class="text-gray-700 text-center mb-8">Entre em contato diretamente através das minhas redes sociais
+                    ou WhatsApp para tirar dúvidas ou agendar uma consulta inicial.</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <a href="https://wa.me/qr/6EPFGZWIRKVCE1" target="_blank"
+                        class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all">
+                        <div class="w-12 h-12 flex items-center justify-center text-green-500 mb-3">
+                            <i class="ri-whatsapp-fill ri-2x"></i>
+                        </div>
+                        <span class="text-center text-gray-800 font-medium">WhatsApp</span>
+                    </a>
+                    <a href="https://www.instagram.com/psi.ryand/" target="_blank"
+                        class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all">
+                        <div class="w-12 h-12 flex items-center justify-center text-pink-600 mb-3">
+                            <i class="ri-instagram-fill ri-2x"></i>
+                        </div>
+                        <span class="text-center text-gray-800 font-medium">Instagram</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ryan-dutra-rodrigues-6a38a9221?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BW9CRS95GTdOfFLZasgpt2A%3D%3D
+                    " target="_blank"
+                        class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all">
+                        <div class="w-12 h-12 flex items-center justify-center text-blue-700 mb-3">
+                            <i class="ri-linkedin-fill ri-2x"></i>
+                        </div>
+                        <span class="text-center text-gray-800 font-medium">LinkedIn</span>
+                    </a>
+                    <a href="mailto:psi.ryand@gmail.com"
+                        class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all">
+                        <div class="w-12 h-12 flex items-center justify-center text-red-500 mb-3">
+                            <i class="ri-mail-fill ri-2x"></i>
+                        </div>
+                        <span class="text-center text-gray-800 font-medium">E-mail</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Agendamento -->
+    <section id="agendar" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-16">Agende sua Consulta</h2>
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-primary mb-6">Agende pelo WhatsApp</h3>
+                    <p class="text-gray-700 mb-8">Caso tenha dúvidas sobre meu serviço, clique no botão abaixo e entre em contato.</p>
+                    <div class="space-y-6">                       
+                        <a href="https://wa.me/qr/6EPFGZWIRKVCE1" target="_blank"
+                            class="flex items-center justify-center w-full bg-primary text-white py-4 !rounded-button shadow-md hover:bg-primary/90 transition-all whitespace-nowrap">
+                            <div class="w-6 h-6 flex items-center justify-center mr-3">
+                                <i class="ri-question-answer-line ri-lg"></i>
+                            </div>
+                            Tirar Dúvidas
+                        </a>
+                        <a href="https://wa.me/qr/6EPFGZWIRKVCE1" target="_blank"
+                            class="flex items-center justify-center w-full border-2 border-primary text-primary py-4 !rounded-button hover:bg-primary/5 transition-all whitespace-nowrap">
+                            <div class="w-6 h-6 flex items-center justify-center mr-3">
+                                <i class="ri-money-dollar-circle-line ri-lg"></i>
+                            </div>
+                            Consultar Valores
+                        </a>
+                        <div class="bg-blue-50 p-6 rounded-lg mt-8">
+                            <h4 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                                <div class="w-6 h-6 flex items-center justify-center text-primary mr-2">
+                                    <i class="ri-information-line"></i>
+                                </div>
+                                Informação
+                            </h4>
+                            <p class="text-gray-700">Ao clicar em um dos botões acima, você será redirecionado para o WhatsApp para iniciar uma conversa diretamente comigo. Responderei o mais breve possível. A entrevista inicial é gratuita e tem duração aproximada de 30 minutos via Google Meet. Informações sobre valores, dias e horários disponíveis também são fornecidas pelo WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-white p-8 rounded-lg shadow-lg mb-8">
+                        <img src="https://public.readdy.ai/ai/img_res/b11d8df53b19469e6d1bb381918fdbce.jpg"
+                            alt="Espaço terapêutico" class="w-full h-auto rounded-lg mb-6">
+                        <p class="text-gray-700 text-center">Para agendar uma consulta ou verificar horários
+                            disponíveis, entre em contato diretamente pelo WhatsApp.</p>
+                        <div class="mt-6">
+                            <a href="https://wa.me/qr/6EPFGZWIRKVCE1" target="_blank"
+                                class="flex items-center justify-center w-full bg-green-500 text-white py-4 !rounded-button shadow-md hover:bg-green-600 transition-all whitespace-nowrap">
+                                <div class="w-6 h-6 flex items-center justify-center mr-3">
+                                    <i class="ri-whatsapp-fill ri-lg"></i>
+                                </div>
+                                Verificar Disponibilidade
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between mb-5">
+              
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h5 class="text-lg font-semibold mb-4">Links Rápidos</h5>
+                        <ul class="space-y-0.2">
+                            <li><a href="#sobre" class="text-gray-400 hover:text-white transition-colors">  Sobre Mim</a>
+                            </li>
+                            <li><a href="#servicos"
+                                    class="text-gray-400 hover:text-white transition-colors">Serviços</a></li>
+                            <li><a href="#especialidades"
+                                    class="text-gray-400 hover:text-white transition-colors">Especialidades</a></li>
+                            <li><a href="https://wa.me/qr/6EPFGZWIRKVCE1" target="_blank"
+                                    class="text-gray-400 hover:text-white transition-colors">Agendar Consulta</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="text-lg font-semibold mb-4">Desenvolvimento</h5>
+                        <ul class="space-y-1">
+                            <p class="text-gray-400 hover:text-white transition-colors">Desenvolvido através de um projeto universitário pelo grupo Coding9</p>
+                        </ul>
+                    </div>
+                    <div class="col-span-2 md:col-span-1">
+                        <h5 class="text-lg font-semibold mb-4">Atendimento</h5>
+                        <p class="text-gray-400 mb-4">De Segunda a Sexta com horários de tarde e noite das 16:00h às 23:00h. (Consultar horário disponível para agendamento via WhatsApp)</p>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2025 Psicologia Inclusiva. Todos os direitos reservados.</p>
+                <div class="flex space-x-4">
+                    <a href="https://www.instagram.com/psi.ryand/" target="_blank"
+                        class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-white hover:bg-primary transition-colors">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ryan-dutra-rodrigues-6a38a9221?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BW9CRS95GTdOfFLZasgpt2A%3D%3D" target="_blank"
+                        class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-white hover:bg-primary transition-colors">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>              
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Animações ao scroll
+        document.addEventListener('DOMContentLoaded', function () {
+            const animatedElements = document.querySelectorAll('.animate-scale-up');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'scale(1)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            animatedElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'scale(0.8)';
+                el.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
+                observer.observe(el);
+            });
+            // Menu mobile toggle
+            const menuButton = document.querySelector('.md\\:hidden');
+            const mobileMenu = document.querySelector('.md\\:flex');
+            menuButton.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Smooth scroll para links de navegação
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
