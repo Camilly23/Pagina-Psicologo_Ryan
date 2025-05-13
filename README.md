@@ -13,12 +13,13 @@ Realizado por alunos da Universidade Nove de Julho (UNINOVE).</p>
 <p>Design acessível, acolhedor e responsivo</p>
 <p>Conteúdo voltado à inclusão da comunidade LGBTQIA+</p>
 
-
 <h2>🛠 Tecnologias utilizadas</h2>
-<div>
-  <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white">
-  <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
-</div>
+<p>🧱 HTML5 – Estrutura do site</p>
+<p>🎨 CSS3 – Estilização personalizada</p>
+<p>⚙️ JavaScript – Funcionalidades básicas de interação</p>
+<p>☁️ Vercel – Deploy e hospedagem</p
 
-## 📌 Ideal para brincadeiras e confraternizações! 😃
+
+<h2>👩‍💻 Autores</h2>
+<p>Projeto desenvolvido por estudantes da Universidade Nove de Julho no curso de Sistemas de Informação.
+Matéria: Gestão de Sistemas Computacionais</p>
