@@ -16,11 +16,6 @@ Realizado por alunos da Universidade Nove de Julho (UNINOVE).</p>
 ![image](https://github.com/user-attachments/assets/20ed6e88-4e36-4694-a675-3f851ea2abcc)
 
 
-[🎥 Demonstração do Projeto](https://drive.google.com/file/d/1-RzZ7waXRjeEewFySLFA7UYDMxvFqxc0/view?usp=sharing)
-
-
-
-
 
 <h2>👩‍💻 Autores</h2>
 <p>Projeto desenvolvido por estudantes da Universidade Nove de Julho no curso de Sistemas de Informação.</p>
