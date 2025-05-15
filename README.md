@@ -5,7 +5,7 @@
 Realizado por alunos da Universidade Nove de Julho (UNINOVE).</p>
 
 <h2>🌐 Acesse o site:</h2>
-<p>🔗pagina-psicologo-ryan.vercel.app</p>
+<p>🔗https://pagina-psicologo-ryan.vercel.app/</p>
 
 <h2>✨ Funcionalidades</h2>
 <p>Apresentação profissional do psicólogo</p>
