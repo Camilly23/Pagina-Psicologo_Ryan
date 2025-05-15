@@ -4,6 +4,9 @@
 <p>📚 Projeto acadêmico da disciplina de Gestão de Sistemas Computacionais
 Realizado por alunos da Universidade Nove de Julho (UNINOVE).</p>
 
+!![image](https://github.com/user-attachments/assets/3fe0b8a7-1816-4993-a25d-27848d5c27c5)
+
+
 <h2>👩‍💻 Autores</h2>
 <p>Projeto desenvolvido por estudantes da Universidade Nove de Julho no curso de Sistemas de Informação.</p>
 
