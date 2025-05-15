@@ -4,6 +4,10 @@
 <p>📚 Projeto acadêmico da disciplina de Gestão de Sistemas Computacionais
 Realizado por alunos da Universidade Nove de Julho (UNINOVE).</p>
 
+<h2>👩‍💻 Autores</h2>
+<p>Projeto desenvolvido por estudantes da Universidade Nove de Julho no curso de Sistemas de Informação.
+Matéria: Gestão de Sistemas Computacionais</p>
+
 <h2>🌐 Acesse o site:</h2>
 <p>🔗https://pagina-psicologo-ryan.vercel.app/</p>
 
@@ -18,9 +22,3 @@ Realizado por alunos da Universidade Nove de Julho (UNINOVE).</p>
 <p>🎨 CSS3 – Estilização personalizada</p>
 <p>⚙️ JavaScript – Funcionalidades básicas de interação</p>
 <p>☁️ Vercel – Deploy e hospedagem</p
-
-
-
-<h2>👩‍💻 Autores</h2>
-<p>Projeto desenvolvido por estudantes da Universidade Nove de Julho no curso de Sistemas de Informação.
-Matéria: Gestão de Sistemas Computacionais</p>
