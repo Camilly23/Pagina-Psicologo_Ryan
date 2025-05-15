@@ -20,6 +20,7 @@ Realizado por alunos da Universidade Nove de Julho (UNINOVE).</p>
 <p>☁️ Vercel – Deploy e hospedagem</p
 
 
-<h1>👩‍💻 Autores</h1>
+
+<h2>👩‍💻 Autores</h2>
 <p>Projeto desenvolvido por estudantes da Universidade Nove de Julho no curso de Sistemas de Informação.
 Matéria: Gestão de Sistemas Computacionais</p>
