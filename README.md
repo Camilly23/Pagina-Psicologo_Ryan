@@ -26,10 +26,6 @@ Realizado por alunos da Universidade Nove de Julho (UNINOVE).</p>
 [Isabel Maria](https://github.com/Planner-tech)
 [Daniel Tomaz](https://github.com/xDanTomaz)
 
-
-<h2>👩‍💻 Autores</h2>
-<p>Projeto desenvolvido por estudantes da Universidade Nove de Julho no curso de Sistemas de Informação.</p>
-
 <h2>🌐 Acesse o site:</h2>
 <p>🔗https://pagina-psicologo-ryan.vercel.app/</p>
 
