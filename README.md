@@ -19,8 +19,12 @@ Realizado por alunos da Universidade Nove de Julho (UNINOVE).</p>
 <h2>👥 Colaboradores</h2>
 
 [Camilly Dutra](https://github.com/Camilly23)
-
-
+[João Pedro](https://github.com/Ch4mp2)
+[Julia Larissa](https://github.com/julialarissasilva)
+[Luis Garcês](https://github.com/luisgarces07)
+[Maria Fernanda](https://github.com/Marys072)
+[Isabel Maria](https://github.com/Planner-tech)
+[Daniel Tomaz](https://github.com/xDanTomaz)
 
 
 <h2>👩‍💻 Autores</h2>
