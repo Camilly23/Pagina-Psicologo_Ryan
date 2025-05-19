@@ -1,8 +1,6 @@
 <h1>🧠 Página do Psicólogo Ryan</h1>
 
 <p>Este projeto é uma página institucional desenvolvida para o psicólogo Ryan, com o objetivo de apresentar seus serviços, trajetória profissional e conteúdos voltados ao bem-estar mental, com atenção especial à comunidade LGBTQIA+.</p>
-<p>📚 Projeto acadêmico da disciplina de Gestão de Sistemas Computacionais
-Realizado por alunos da Universidade Nove de Julho (UNINOVE).</p>
 
 ![image](https://github.com/user-attachments/assets/3fe0b8a7-1816-4993-a25d-27848d5c27c5)
 ![image](https://github.com/user-attachments/assets/9cae446c-345a-4cca-9874-c69550f8af5f)
@@ -14,6 +12,14 @@ Realizado por alunos da Universidade Nove de Julho (UNINOVE).</p>
 ![image](https://github.com/user-attachments/assets/7c2bd2bf-935f-4764-9856-485af867e389)
 ![image](https://github.com/user-attachments/assets/3519e09c-6684-4d20-8c80-0f4e1c383300)
 ![image](https://github.com/user-attachments/assets/20ed6e88-4e36-4694-a675-3f851ea2abcc)
+
+<p>📚 Projeto acadêmico da disciplina de Gestão de Sistemas Computacionais
+Realizado por alunos da Universidade Nove de Julho (UNINOVE).</p>
+
+<h2>👥 Colaboradores</h2>
+
+[Camilly Dutra](https://github.com/Camilly23)
+
 
 
 
