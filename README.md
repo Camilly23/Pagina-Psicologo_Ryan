@@ -18,7 +18,7 @@ Realizado por alunos da Universidade Nove de Julho (UNINOVE).</p>
 
 <h2>👥 Colaboradores</h2>
 
-[Camilly Dutra](https://github.com/Camilly23)
+[Camilly Dutra](https://github.com/Camilly23)<br>
 [João Pedro](https://github.com/Ch4mp2)
 [Julia Larissa](https://github.com/julialarissasilva)
 [Luis Garcês](https://github.com/luisgarces07)
